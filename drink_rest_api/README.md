@@ -1,4 +1,4 @@
-
+social media template from https://github.com/tomitokko/django-social-media-website/blob/main/core/views.py
 
 
 

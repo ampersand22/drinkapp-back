@@ -1,13 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from rest_framework import generics
 from .serializers import UserAccountSerializer
-from .models import UserAccount
-
-### ALLOWS YOU TO CREATE AND CHECK PASSWORDS
+from .models import UserAccount, Post, LikePost, FollowersCount
+from django.contrib import messages
+from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
+from itertools import chain
+import random
 from django.contrib.auth.hashers import make_password, check_password
-### ALLOWS YOU TO SEND JSON AS A RESPONSE
 from django.http import JsonResponse
-### ALLOWS YOU TO TRANSLATE DICTIONARIES INTO JSON DATA
 import json
 
 
