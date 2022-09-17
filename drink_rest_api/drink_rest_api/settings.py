@@ -35,7 +35,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'users_api',
     'drinks_api',
-    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
